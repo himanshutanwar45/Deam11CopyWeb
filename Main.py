@@ -658,6 +658,6 @@ def GetMatchType_Scheduled():
         return jsonify({'data':'1','column':str(ex)})
     
 
-# if __name__ == "__main__":
-#     app.run(host="192.168.1.40" ,port="9090",debug=True)
-#     #app.run(debug=False,host="0.0.0.0")
+if __name__ == "__main__":
+    app.run(host="192.168.1.40" ,port="9090",debug=True)
+    #app.run(debug=False,host="0.0.0.0")
