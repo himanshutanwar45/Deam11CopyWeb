@@ -7,7 +7,7 @@ class Connection:
     
     def Getserver_name():
         driver = "{SQL Server Native Client 11.0}"
-        server_name = "localhost"
+        server_name = "34.131.83.148"
         database = "master"
         conn ="Driver="+driver + ";SERVER="+server_name+ ";DATABASE="+database+ ";Trusted_Connection=yes;"
         return conn
