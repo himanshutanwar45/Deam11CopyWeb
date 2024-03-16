@@ -1,0 +1,76 @@
+body {
+    font-family: "Times New Roman";
+    font-weight: 300;
+    line-height: 1.4;
+    background-color: white;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: black;
+    border: 0.5px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.header {
+    margin-top: 10px;
+    position: fixed;
+    text-align: center;
+    width: 99%;
+    color: white;
+    border: 0.5px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.visualTable {
+    margin-top: 20px;
+    overflow-y: auto;
+    width: 45%;
+    height: 50%;
+    background-color: white;
+    float: left;
+    justify-content: space-between;
+}
+
+.visualTable .VTabContent {
+    margin: 10px 10px 10px 10px;
+}
+
+table {
+    border: 1px solid #ddd;
+    text-align: left;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 7px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: antiquewhite;
+}
+
+tr:hover {
+    background-color: antiquewhite;
+}
+
+.visualTable2 {
+    margin-top: 20px;
+    overflow-y: auto;
+    width: 45%;
+    height: 50%;
+    background-color: white;
+    float: right;
+    justify-content: space-between;
+}
+
+.visualTable2 .VTabContent2 {
+    margin: 10px 10px 10px 10px;
+}

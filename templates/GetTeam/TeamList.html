@@ -1,0 +1,55 @@
+{% extends "Base.html" %}
+
+{% block head %}
+
+<title>
+	Home | TeamList
+</title>
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/GetTeam/GetTeamList.css') }}">
+
+{% endblock %}
+
+{% block content %}
+
+<header id="header-msg">
+
+</header>
+
+<div class="main-section-container">
+	<div class="left-content">
+		<div class="desc-container">
+			<div class="heading">
+				<h1> Team List </h1>
+			</div>
+			<div style="margin-left:10px ;">
+				<button class="btn btn-outline-primary" id="Update">Update List</button>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="right-content">
+
+		<div class="packs-card-container" id="packs-card-container">
+
+		</div>
+
+
+		<!-- <div class="modal-container" id="modal-container">
+
+		</div>
+
+		<div class="modal-container" id="modal-container-player-info">
+
+		</div> -->
+	</div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="{{ url_for('static', filename='js/GetTeam/GetTeamList.js') }}"></script>
+
+{% endblock %}

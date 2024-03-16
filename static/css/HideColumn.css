@@ -1,0 +1,440 @@
+@media (min-width: 480px) {
+    .modal-container {
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  
+  .modal-container {
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 50;
+  }
+
+  .modal-container-1 {
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 99;
+  }
+  
+  
+  .modal-container .modal-backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    transition: opacity .3s cubic-bezier(.465, .183, .153, .946);
+  }
+
+  .modal-container-1 .modal-backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    transition: opacity .3s cubic-bezier(.465, .183, .153, .946);
+  }
+
+
+  
+  .modal-container.active .modal-content {
+    transform: translateZ(0);
+  }
+  
+
+  @media (min-width: 480px) {
+    .modal-container .modal-content {
+        max-width: 1400px;
+        max-height: 600px;
+        border-radius: 4px;
+        overflow: auto;
+    }
+  }
+
+  .modal-container .modal-content {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    background-color: white;
+    min-height: 300px;
+    width: 100%;
+    border-radius: 12px 12px 12px 12px;
+    transition: transform .3s cubic-bezier(.465, .183, .153, .946), -webkit-transform .3s cubic-bezier(.465, .183, .153, .946);
+  
+  }
+
+  .modal-container .modal-content .modal-header {
+    position: relative;
+    padding-left: 10px;
+  }
+  
+  .modal-container .modal-content .modal-header .modal-heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: .2px;
+  }
+  
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #06d6fa;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }  
+
+  @media (min-width: 768px) {
+    .right-session-input .right-input-box {
+      margin-bottom: 15px;
+      width: calc(100% / 1 - 20px);
+    }
+  
+  }
+
+
+  .modal-container .modal-content .modal-body {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  
+
+  .details{
+    margin-left: 10px;
+  }
+
+  .button-hidecol {
+    position: fixed;
+    height: 45px;
+    margin: 0 0 0 20px;
+}
+
+.button-hidecol input {
+        height: 70%;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    }
+
+    @media (min-width: 300px) {
+        .right-session-table-hidecol {
+            outline: none;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid #d4b2e9;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            height: calc(100vh - 550px);
+            overflow: auto;
+            margin: 10px 10px 10px 10px;
+        }
+    }
+
+    @media (min-width: 300px) {
+        .styled-table-hidecol {
+          border-collapse: collapse;
+          font-size: 0.9em;
+          font-family: sans-serif;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          width: 100%;
+          overflow: auto;
+          margin-top: 5px;
+        }
+      }
+      
+      .styled-table-hidecol thead tr  {
+        margin-top: 10px;
+        background-color: rgb(233, 201, 190);
+        color: #696b6f;
+        text-align: left;
+        position: sticky;
+        top: 0;
+        border: 1px solid #686868;
+        min-width: 200px;
+      }
+      
+      .styled-table-hidecol th,
+      .styled-table-hidecol td {
+        border: 1px solid #686868;
+        max-width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 16px 12px;
+      }
+    
+      .styled-table-hidecol tbody tr:hover td {
+        background-color: lightblue; 
+      }
+    
+      .styled-table-hidecol tbody tr {
+        border-bottom: 1px solid #dddddd;
+      
+      }
+      
+      .styled-table-hidecol tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+      
+      .styled-table-hidecol tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+      
+      .styled-table-hidecol tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+      }
+
+
+      @media (min-width: 300px) {
+        .right-session-table-scorecard {
+            outline: none;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid #d4b2e9;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            height: calc(100vh - 500px);
+            overflow: auto;
+            margin: 10px 10px 10px 10px;
+        }
+    }
+
+      @media (min-width: 300px) {
+        .styled-table-scorecard {
+          border-collapse: collapse;
+          font-size: 0.9em;
+          font-family: sans-serif;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          width: 100%;
+          overflow: auto;
+          margin-top: 5px;
+        }
+      }
+      
+      .styled-table-scorecard thead tr  {
+        margin-top: 10px;
+        background-color: rgb(233, 201, 190);
+        color: #696b6f;
+        text-align: left;
+        position: sticky;
+        top: 0;
+        border: 1px solid #686868;
+        min-width: 200px;
+      }
+      
+      .styled-table-scorecard th,
+      .styled-table-scorecard td {
+        border: 1px solid #686868;
+        max-width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 16px 12px;
+      }
+    
+      
+    
+      .styled-table-scorecard tbody tr {
+        border-bottom: 1px solid #dddddd;
+      
+      }
+      
+      .styled-table-scorecard tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+      
+      .styled-table-scorecard tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+      
+      .styled-table-scorecard tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+      }
+
+      .styled-table-scorecard tbody tr:hover td {
+        background-color: lightblue; 
+      }
+    
+
+      @media (min-width: 300px) {
+        .right-session-table-bat {
+            outline: none;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid #d4b2e9;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            height: calc(100vh - 200px);
+            overflow: auto;
+            margin: 10px 10px 10px 10px;
+        }
+    }
+
+      @media (min-width: 300px) {
+        .styled-table-bat {
+          border-collapse: collapse;
+          font-size: 0.9em;
+          font-family: sans-serif;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          width: 100%;
+          overflow: auto;
+          margin-top: 5px;
+        }
+      }
+      
+      .styled-table-bat thead tr  {
+        margin-top: 10px;
+        background-color: rgb(233, 201, 190);
+        color: #696b6f;
+        text-align: left;
+        position: sticky;
+        top: 0;
+        border: 1px solid #686868;
+        min-width: 200px;
+      }
+      
+      .styled-table-bat th,
+      .styled-table-bat td {
+        border: 1px solid #686868;
+        max-width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 16px 12px;
+      }
+    
+      
+    
+      .styled-table-bat tbody tr {
+        border-bottom: 1px solid #dddddd;
+      
+      }
+      
+      .styled-table-bat tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+      
+      .styled-table-bat tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+      
+      .styled-table-bat tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+      }
+
+      .styled-table-bat tbody tr:hover td {
+        background-color: lightblue; 
+      }
+
+
+
+      @media (min-width: 300px) {
+        .right-session-table-bowl {
+            outline: none;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid #d4b2e9;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            height: calc(100vh - 240px);
+            overflow: auto;
+            margin: 10px 10px 10px 10px;
+        }
+    }
+
+      @media (min-width: 300px) {
+        .styled-table-bowl {
+          border-collapse: collapse;
+          font-size: 0.9em;
+          font-family: sans-serif;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          width: 100%;
+          overflow: auto;
+          margin-top: 5px;
+        }
+      }
+      
+      .styled-table-bowl thead tr  {
+        margin-top: 10px;
+        background-color: rgb(233, 201, 190);
+        color: #696b6f;
+        text-align: left;
+        position: sticky;
+        top: 0;
+        border: 1px solid #686868;
+        min-width: 200px;
+      }
+      
+      .styled-table-bowl th,
+      .styled-table-bowl td {
+        border: 1px solid #686868;
+        max-width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 16px 12px;
+      }
+    
+      
+    
+      .styled-table-bowl tbody tr {
+        border-bottom: 1px solid #dddddd;
+      
+      }
+      
+      .styled-table-bowl tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+      
+      .styled-table-bowl tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+      
+      .styled-table-bowl tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+      }
+
+      .styled-table-bowl tbody tr:hover td {
+        background-color: lightblue; 
+      }

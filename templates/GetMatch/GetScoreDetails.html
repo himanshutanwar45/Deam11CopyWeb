@@ -1,0 +1,56 @@
+{% extends "Base.html" %}
+
+{% block head %}
+
+<title>
+	Home | Recent match | Score details
+</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/GetMatch/GetMatchList.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Loader.css') }}">
+
+{% endblock %}
+
+{% block content %}
+
+<div class="main-section-container">
+    <div class="left-content">
+        <div class="desc-container">
+            <div class="heading">
+                <h1>Score Details </h1>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="right-content">
+        <div class="recharge-online-container">
+            <div class="tabs-container">
+                <div class="tabs-header" id="tab-header">
+                    <div class="tabs-header-scroll-section"></div>
+                    <div class="tabs-header-content " id="tab-header-0"><span class="tabs-header-content-text active">Batters</span></div>
+
+                    <div class="tabs-header-scroll-section"></div>
+                    <div class="tabs-header-content" id="tab-header-1"><span class="tabs-header-content-text">Bowlers</span></div>
+                </div>
+
+                <div class="tabs-content">
+                    <div class="tabs-conponent">
+                        <div class="packs-card-container" id="packs-card-score-detail">
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="{{ url_for('static', filename='js/GetMatch/GetScoreDetails.js') }}" ></script>
+
+{% endblock %}

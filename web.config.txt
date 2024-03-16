@@ -1,0 +1,12 @@
+<configuration>  
+  <system.webServer>
+    <handlers>
+        <add name="Python FastCGI" path="*" verb="*" modules="FastCgiModule" scriptProcessor="C:\Python\python.exe|C:\Python\Lib\site-packages\wfastcgi.py" resourceType="Unspecified" requireAccess="Script" />
+    </handlers>
+  </system.webServer>
+  <appSettings>
+    <add key="WSGI_HANDLER" value="app.app" /> <!-- {name_of_file}.{name_of_flask_app}-->
+    <add key="PYTHONPATH" value="F:\Project\Python\Web Development\2023\Cricket" />
+	<!-- <add key="WSGI_LOG" value="F:\Project\Python\Web Development\2023\Cricket\app.log" />-->
+  </appSettings>
+</configuration>  

@@ -1,0 +1,120 @@
+{% extends "Base.html" %}
+
+{% block head %}
+
+<title>
+    Home | Recent match
+</title>
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Loader.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+
+{% block content %}
+
+    <!-- <div class="session" id="session">
+        <div class="left-session">
+            <button type="button" class="collapsible">Administrator</button>
+            <div class="content">
+                <input type="button" id="users" value="Users" class="btn-recharge">
+                <input type="button" id="pc" value="Password Change" class="btn-recharge">
+            </div>
+
+            <button type="button" class="collapsible">Get Teams</button>
+            <div class="content">
+                <input type="button" id="tl" value="Team List" class="btn-recharge">
+            </div>
+
+            <button type="button" class="collapsible">Get Match</button>
+            <div class="content">
+                <input type="button" id="ml" value="Recent Match List" class="btn-recharge">
+                <input type="button" id="um" value="Upcomming Matches" class="btn-recharge">
+            </div>
+
+            <button type="button" class="collapsible">Preview Team</button>
+            <div class="content">
+                <input type="button" id="pt" value="Preview Team" class="btn-recharge">
+            </div>
+
+        </div>
+        <div class="packs-card-container">
+            <div class="pack-card-container">
+                <div class="pack-card-content">
+                    <div class="pack-card-left-section">
+                        <div class="pack-card-details">
+                            <div class="pack-card-detail" id="pack-card-detail">
+                                
+                            </div>
+
+                        </div>
+                        <div class="pack-card-benefits-heading"> </div>
+                    </div>
+                    <!-- <div class="pack-card-right-section">
+                    <button class="btn fit" id="buttonComponent- index + '"> Create Team </button>
+                </div> 
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="main-section-container">
+        <div class="left-content">
+            <div class="desc-container">
+                <button type="button" class="collapsible btn btn-outline-primary">Administrator</button>
+                <div class="content">
+                    <input type="button" id="users" value="Users" class="btn-recharge btn btn-outline-secondary">
+                    <input type="button" id="pc" value="Password Change" class="btn-recharge btn btn-outline-secondary">
+                </div>
+
+                <button type="button" class="collapsible btn btn-outline-primary">Get Teams</button>
+                <div class="content">
+                    <input type="button" id="tl" value="Team List" class="btn-recharge btn btn-outline-secondary">
+                </div>
+    
+                <button type="button" class="collapsible btn btn-outline-primary">Get Match</button>
+                <div class="content">
+                    <input type="button" id="ml" value="Recent Match List" class="btn-recharge btn btn-outline-secondary">
+                    <input type="button" id="um" value="Upcomming Matches" class="btn-recharge btn btn-outline-secondary">
+                </div>
+    
+                <button type="button" class="collapsible btn btn-outline-primary">Preview Team</button>
+                <div class="content">
+                    <input type="button" id="pt" value="Preview Team" class="btn-recharge btn btn-outline-secondary">
+                </div>
+            </div>
+    
+    
+        </div>
+    
+        <div class="right-content">
+            <div class="recharge-online-container">
+                <div class="tabs-container">
+                    <div class="tabs-content">
+                        <div class="tabs-single-content" id="tab-content">
+                            <!--fetch from javascript-->
+                        </div>
+                        <div class="tabs-conponent">
+                            <div class="packs-card-container" id="packs-card-container">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/Admin/Home.js') }}" ></script>
+
+{% endblock %}
+
+<!-- $.each(data, function (index, row) {
+                        var tableRow = $('<tr></tr>').appendTo("#point_details tbody");
+                        $.each(colname, function (index, columnName) {
+                            tableRow.append('<td >' + row[columnName] + '</td>');
+                            //console.log(tableRow)
+                        });
+                    }); -->

@@ -1,0 +1,237 @@
+
+
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    margin-top: 20px;
+    margin-left:450px;
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+    .container .title {
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+    }
+
+        .container .title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+
+.content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 20px;
+    width: 100%;
+    outline: none;
+    font-size: 12px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .dropdown select {
+    height: 20px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+    .user-details .input-box input:focus,
+    .user-details .input-box input:valid {
+        border-color: #9b59b6;
+    }
+
+form .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+    form .category label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        form .category label .dot {
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background: #d9d9d9;
+            border: 5px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+form .button {
+    height: 45px;
+    margin: 35px 0
+}
+
+    form .button input {
+        margin-top: 60px;
+        height: 70%;
+        width: 15%;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    }
+
+        form .button input:hover {
+            /* transform: scale(0.99); */
+            background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+        }
+
+@media(max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .category {
+        width: 100%;
+    }
+
+    .content form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar {
+        width: 5px;
+    }
+}
+
+@media(max-width: 459px) {
+    .container .content .category {
+        flex-direction: column;
+    }
+}
+
+select {
+    appearance: none;
+    border: 1px solid #ccc;
+    padding:2px;
+    font-size: 12px;
+    width: 75px;
+    background-color: #fff;
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+option {
+    background-color: #fff;
+    color: #333;
+    font-size: 12px;
+}
+
+select:hover,
+select:focus {
+    border-color: #999;
+    box-shadow: 0 0 3px #999;
+}
+
+table {
+    border: 1px solid #ddd;
+    text-align: left;
+    width: 100%;
+}
+
+th, td {
+    padding: 7px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: antiquewhite;
+}
+
+.tablecont {
+    margin-top: 20px;
+    margin-left: 450px;
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    height:150px;
+    overflow-y:auto;
+}
+
+.login_oueter {
+    width: 360px;
+    max-width: 100%;
+}
+.logo_outer{
+    text-align: center;
+}
+.logo_outer img{
+    width:120px;
+    margin-bottom: 40px;
+}
+
+form .passopen input {
+    width: 25px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+}

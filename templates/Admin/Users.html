@@ -1,0 +1,155 @@
+{% extends "Base.html" %}
+
+{% block head %}
+
+<title>
+	Home | Users
+</title>
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Admin/Users.css') }}">
+
+{% endblock %}
+
+{% block content %}
+<!-- <div class="container">
+	<div class="title">Users</div>
+	<div class="content">
+		<form id="User_Add">
+			<div class="user-details">
+
+				<div class="input-box">
+					<span class="details">First Name</span>
+					<input type="text" id="fname" name="fname" placeholder="Enter First Name">
+				</div>
+
+				<div class="input-box">
+					<span class="details">Last Name</span>
+					<input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+				</div>
+
+				<div class="input-box">
+					<span class="details">Email</span>
+					<input type="email" placeholder="Enter your email" id="email" name="email">
+				</div>
+
+				<div class="input-box">
+					<span class="details">Password</span>
+					<input type="password" placeholder="Enter your password" id="Pass" name="Pass">
+				</div>
+
+				<div class="input-box">
+					<span class="details">Confirm Password</span>
+					<input type="password" placeholder="Confirm your password" id="ConPass" name="ConPass">
+				</div>
+
+				<div class="input-box">
+					<span id="PassCheck" style="color: red;"></span>
+				</div>
+			</div>
+
+			<div class="button">
+				<input type="submit" value="Add" id="Add" name="Add">
+
+			</div>
+		</form>
+	</div>
+</div> -->
+
+<div class="main-section-container">
+	<div class="left-content">
+		<div class="desc-container">
+			<div class="heading">
+				<h1> Users </h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="right-content">
+		<div class="recharge-online-container">
+			<div class="tabs-container">
+				<div class="tabs-content">
+					<div class="tabs-conponent">
+						<div class="packs-card-container" id="packs-card-container">
+							<form class="row g-3 needs-validation">
+								<div class="d-flex flex-wrap">
+									<div class="col-md-4">
+										<label for="fname" class="form-label">First name</label>
+										<input type="text" class="form-control" id="fname" name="fname" required>
+									</div>
+
+									<div class="col-md-4">
+										<label for="lname" class="form-label">Last name</label>
+										<input type="text" class="form-control" id="lname" name="lname" required>
+									</div>
+
+									<div class="col-md-4">
+										<label for="email" class="form-label">Email</label>
+										<div class="input-group has-validation">
+											<span class="input-group-text" id="inputGroupPrepend">@</span>
+											<input type="text" class="form-control" aria-describedby="inputGroupPrepend"
+												id="email" name="email" required>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<label for="Pass" class="form-label">Password</label>
+										<input type="password" class="form-control" id="Pass" name="Pass" required>
+									</div>
+
+									<div class="col-md-4">
+										<label for="ConPass" class="form-label">Confirm Password</label>
+										<input type="password" class="form-control" id="ConPass" name="ConPass"
+											required>
+									</div>
+
+									<div class="col-md-10 mt-4">
+										<span id="PassCheck" style="color: red;" class="ms-4"></span>
+									</div>
+
+									<div class="col-md-10 mt-4">
+										<button class="btn btn-outline-primary" type="submit" id="Add">Add</button>
+									</div>
+
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/Admin/Users.js') }}"></script>
+<!-- <script>
+    $(document).ready(function (event) {
+        $.ajax({
+            url: '/Employee/LastEmpCode',
+            type: 'GET',
+            success: function (data) {
+                var textbox_value = data; // Use the first value from the returned data
+                $('#EmpCode').val(textbox_value);
+            }
+        });
+    });
+</script> -->
+
+<script>
+
+</script>
+<script>
+	$(document).ready(function () {
+		$('#Cancel').click(function (event) {
+			event.preventDefault();
+			window.location.href = '/Dashboard/Open';
+			console.log(window.location.href)
+		});
+	});
+</script>
+
+{% endblock %}
