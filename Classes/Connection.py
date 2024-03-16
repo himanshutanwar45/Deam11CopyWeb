@@ -8,7 +8,7 @@ class Connection:
     
     def Getserver_name():
         driver = "{SQL Server}"
-        server_name = "34.131.83.148"
+        server_name = "34.131.20.56"
         database = "master"
         sql_user = "sqlserver"
         sql_pass = "sa@2019"
