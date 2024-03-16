@@ -6,8 +6,10 @@ class Connection:
         return conn
     
     def Getserver_name():
-        driver = "{SQL Server Native Client 11.0}"
+        driver = "{SQL Server}"
         server_name = "34.131.83.148"
         database = "master"
-        conn ="Driver="+driver + ";SERVER="+server_name+ ";DATABASE="+database+ ";Trusted_Connection=yes;"
+        sql_user = "sqlserver"
+        sql_pass = "sa@2019"
+        conn ="Driver="+driver + ";SERVER="+server_name+ ";DATABASE="+database+ ";UID="+sql_user+ ";PWD="+sql_pass
         return conn
