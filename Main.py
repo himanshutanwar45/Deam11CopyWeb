@@ -26,7 +26,7 @@ def Server_details():
 @app.route('/', methods=['GET', 'POST'])
 def main_page():
     session.clear()
-    return render_template('Login.html')
+    return render_template('Index.html')
 
 
 @app.route('/Home', methods=['GET', 'POST'])
@@ -34,7 +34,7 @@ def Home():
     if 'User_Code' in session:
         return render_template('Home.html')
     else:
-        return render_template('Login.html')
+        return render_template('Index.html')
 
 @app.route('/GetTeams/TeamList', methods=['GET', 'POST'])
 def TeamList():
@@ -155,7 +155,7 @@ def LoginPage():
                 
                 return resp
             else:
-                return render_template('Login.html')
+                return render_template('Index.html')
     except Exception as ex:
         return jsonify(str(ex))
     
